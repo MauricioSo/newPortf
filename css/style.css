@@ -64,10 +64,18 @@
 }
 
 /* burguer */
-.burguer {
+.burguerMenu {
   position: absolute;
   top: 10px;
   right: 20px;
+  font-size: 30px;
+  display: none;
+}
+
+.perfilIcon {
+  position: absolute;
+  top: 10px;
+  left: 20px;
   font-size: 30px;
   display: none;
 }
@@ -131,6 +139,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  z-index: 6;
 }
 
 .list {
@@ -266,8 +275,34 @@ html.is-leaving .transition-wipe {
 /* responsiveness */
 @media only screen and (max-width: 800px) {
   /* this is for tablets appears the hamburguer icon */
-  .burguer {
+  .burguerMenu {
     display: inline;
+    z-index: 11;
+  }
+  .perfilIcon {
+    display: inline;
+    z-index: 1100;
+  }
+  .perfil {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 800px;
+    top: 0;
+    left: -100%;
+    overflow: hidden;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
   }
   .list {
     position: fixed;
@@ -291,9 +326,12 @@ html.is-leaving .transition-wipe {
     background: #eee6d1;
     z-index: 10;
   }
-  .menu-active {
+  .active {
     /*class for the animated menu*/
     right: 0px;
+  }
+  .activePerfil {
+    left: 0px;
   }
 }
 
@@ -304,11 +342,6 @@ html.is-leaving .transition-wipe {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .perfil {
-    width: 100%;
-    height: 50vh;
-    max-width: 100vw;
   }
   /*animations for swup.css*/
   .transition-fade {

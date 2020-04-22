@@ -1,31 +1,40 @@
-const swup = new Swup(); 
+const swup = new Swup();
 
-function init() { 
-    if(document.querySelector(".burguer")) { 
-const burguer = document.querySelector(".burguer");
-const list = document.querySelector(".list"); 
+function init() {
+    if (document.querySelector(".burguerMenu")) {
+        const burguer = document.querySelector(".burguerMenu");
+        const list = document.querySelector(".list");
+        const perfilIcon = document.querySelector(".perfilIcon");
+        const perfil = document.querySelector(".perfil");
+        burguer.addEventListener('click', () => {
+            list.classList.toggle("active");
+        })
 
+        list.addEventListener('click', () => {
+            list.classList.toggle("active");
+        })
+
+        perfilIcon.addEventListener('click', () => {
+            perfil.classList.toggle("activePerfil");
+        })
+    };
+
+}
+swup.on('contentReplaced', init);
+
+const burguer = document.querySelector(".burguerMenu");
+const list = document.querySelector(".list");
+const perfilIcon = document.querySelector(".perfilIcon");
+const perfil = document.querySelector(".perfil");
 
 burguer.addEventListener('click', () => {
-    list.classList.toggle("menu-active");
-    })
-
-list.addEventListener('click', () => {
-    list.classList.toggle("menu-active");
+    list.classList.toggle("active");
 })
 
-};
-}
-swup.on('contentReplaced', init); 
-
-const burguer = document.querySelector(".burguer");
-const list = document.querySelector(".list"); 
-
-
-burguer.addEventListener('click', () => {
-    list.classList.toggle("menu-active");
-    })
-
 list.addEventListener('click', () => {
-    list.classList.toggle("menu-active");
+    list.classList.toggle("active");
+})
+
+perfilIcon.addEventListener('click', () => {
+    perfil.classList.toggle("activePerfil");
 })
