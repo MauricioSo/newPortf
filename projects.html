@@ -5,7 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Load css stylesheet, and awesome fonts -->
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" />
 
   <title>Mauricio Soto - Portofolio</title>
@@ -13,40 +16,47 @@
 
 <body>
   <div class="wrapper">
-
     <div class="perfil">
       <!-- here start the left part green>-->
 
       <h2 class="title-perfil">Mauricio Soto</h2>
-      <img class="img-perfil" src="/img/img-perfil.png" alt="" />
-      <p class="text-perfil">Javascript, HTML, CSS, SCSS, React, Wordpress, ES6</p>
-      <p class="text-perfil">
-        Hey I can help you to build app in javascript, react or wordpress
-      </p>
-      <div class="social-networks">
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-free-code-camp"></i>
-
+      <img class="img-perfil" src="img/img-perfil.png" alt="" />
+      <div class="skills" style="display: flex; flex-direction: column; ">
+        <p class="text-perfil" style="margin-bottom: 0; align-self: center; justify-self: center; ">
+          Skills:
+        </p>
+        <br />
+        <p class="text-perfil" style="margin-top: 3px">
+          Javascript, HTML, CSS, SCSS, React, Wordpress, ES6
+        </p>
       </div>
 
+      <div class="social-networks" style="width: 100px; height: 100px;  display:flex;">
+        <a href="https://twitter.com/MausoMau" style="text-decoration:none; color:black; margin: 3px; "><i
+            class="fab fa-2x fa-twitter-square"></i></a>
+        <a href="https://www.freecodecamp.org/fccbd2d538e-109d-4969-b6ca-01e777aa03a5"
+          style="text-decoration:none; color:black; margin: 3px;"><i class="fab fa-2x fa-free-code-camp"></i></a>
+        <a href="https://github.com/MauricioSo" style="text-decoration:none; color:black; margin: 3px; "><i
+            class="fab fa-2x fa-github"></i></a>
+      </div>
 
     </div>
 
-    <!-- here is the part where is the content of all type -->
     <div id="swup" class="transition-fade content">
+
       <nav class="navbar">
         <div class="perfilIcon">
           <i class="fa fa-bars hamburguer"></i>
         </div>
-        <ul class="list">
+        <ul class="list" id="listId">
           <li><a class="list-el" href="/index.html">home</a></li>
           <li>
             <a class="list-el" href="/projects.html">projects</a>
           </li>
-          <!-- <li><a class="list-el" href="/blog.html">blog</a></li>-->
+          <!-- <li><a class="list-el" href="/blog.html">blog</a></li>*/-->
         </ul>
       </nav>
-      <div class="burguer">
+      <div class="burguerMenu">
         <i class="fa fa-bars hamburguer"></i>
       </div>
       <div class="content-text">
