@@ -237,7 +237,7 @@ html.is-leaving .transition-wipe {
 
 .column1-project {
   width: 35%;
-  background: #246e89;
+  background: #bae7e0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,13 +251,22 @@ html.is-leaving .transition-wipe {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 10px;
+  margin-right: 10px;
+  -webkit-box-shadow: 3px 5px 3px #888888;
+          box-shadow: 3px 5px 3px #888888;
 }
 
 .column2-project {
-  width: 65%;
-  background: #bae7e0;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65%;
+  background: #bae7e0;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -265,6 +274,9 @@ html.is-leaving .transition-wipe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 5px 3px #888888;
+          box-shadow: 3px 5px 3px #888888;
 }
 
 .img-project {

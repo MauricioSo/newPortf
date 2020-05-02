@@ -194,19 +194,26 @@ html.is-leaving .transition-wipe {
 
 .column1-project {
   width: 35%;
-  background: $colorForth;
+  background: $colorTerceary;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 10px;
+  margin-right: 10px;
+  box-shadow: 3px 5px 3px #888888;
 }
 
 .column2-project {
+  display: flex;
+  flex-direction: column; 
   width: 65%;
   background: $colorTerceary;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  box-shadow: 3px 5px 3px #888888;
 }
 
 .img-project {
